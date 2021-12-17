@@ -101,6 +101,23 @@ final class UploadManagerTest extends TestCase
         );
     }
 
+    public function testDelete(): void
+    {
+        [$filesystem, $bucket] = $this->getFilesystemAndBucket();
+        $manager = new UploadManager($bucket, TestUpload::class, '/');
+
+        $tmpName = bin2hex(random_bytes(16));
+        $tmpFile = sys_get_temp_dir().'/'.$tmpName;
+        touch(sys_get_temp_dir().'/'.$tmpName);
+
+        $upload = $manager->create($tmpFile, basename($tmpFile));
+        $this->assertTrue($filesystem->fileExists($upload->getPath()));
+
+        $result = $manager->delete($upload);
+        $this->assertTrue($result);
+        $this->assertFalse($filesystem->fileExists($upload->getPath()));
+    }
+
     private function getFilesystemAndBucket(): array
     {
         return [
