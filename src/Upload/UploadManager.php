@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Ruvents\SpiralUpload\Upload;
 
-use Ruvents\SpiralUpload\Exception\FileNotReadableException;
 use League\MimeTypeDetection\GeneratedExtensionToMimeTypeMap;
+use Ruvents\SpiralUpload\Exception\FileNotReadableException;
 use Spiral\Storage\BucketInterface;
 use Webmozart\Assert\Assert;
 

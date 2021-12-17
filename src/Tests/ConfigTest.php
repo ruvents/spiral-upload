@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Ruvents\SpiralUpload\Tests;
 
+use PHPUnit\Framework\TestCase;
 use Ruvents\SpiralUpload\Config\UploadConfig;
 use Ruvents\SpiralUpload\Exception\ConfigException;
 use Ruvents\SpiralUpload\Tests\Fixtures\TestUpload;
-use PHPUnit\Framework\TestCase;
 
 /**
  * @internal

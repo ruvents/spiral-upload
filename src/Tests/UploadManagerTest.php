@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Ruvents\SpiralUpload\Tests;
 
-use Ruvents\SpiralUpload\Tests\Fixtures\TestUpload;
-use Ruvents\SpiralUpload\Upload\UploadManager;
 use League\Flysystem\Filesystem;
 use League\Flysystem\InMemory\InMemoryFilesystemAdapter;
 use PHPUnit\Framework\TestCase;
+use Ruvents\SpiralUpload\Tests\Fixtures\TestUpload;
+use Ruvents\SpiralUpload\Upload\UploadManager;
 use Spiral\Storage\Bucket;
 
 /**
