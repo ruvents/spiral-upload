@@ -5,12 +5,13 @@ declare(strict_types=1);
 namespace Ruvents\SpiralUpload\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Ruvents\SpiralUpload\UploadConfig;
 use Ruvents\SpiralUpload\Exception\ConfigException;
 use Ruvents\SpiralUpload\Tests\Fixtures\TestUpload;
+use Ruvents\SpiralUpload\UploadConfig;
 
 /**
  * @internal
+ * @covers \Ruvents\SpiralUpload\UploadConfig
  */
 final class ConfigTest extends TestCase
 {

@@ -13,6 +13,7 @@ use Spiral\Storage\Bucket;
 
 /**
  * @internal
+ * @covers \Ruvents\SpiralUpload\UploadManager
  */
 final class UploadManagerTest extends TestCase
 {
