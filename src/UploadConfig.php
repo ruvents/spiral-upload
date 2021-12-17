@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Ruvents\SpiralUpload\Config;
+namespace Ruvents\SpiralUpload;
 
 use Ruvents\SpiralUpload\Exception\ConfigException;
-use Ruvents\SpiralUpload\Upload\UploadInterface;
+use Ruvents\SpiralUpload\UploadInterface;
 use Spiral\Core\InjectableConfig;
 
 final class UploadConfig extends InjectableConfig

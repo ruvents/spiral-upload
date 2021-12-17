@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Ruvents\SpiralUpload\Tests\Fixtures;
 
-use Ruvents\SpiralUpload\Upload\UploadInterface;
+use Ruvents\SpiralUpload\UploadInterface;
 
 final class TestUpload implements UploadInterface
 {

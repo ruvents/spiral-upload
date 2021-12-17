@@ -8,7 +8,7 @@ use League\Flysystem\Filesystem;
 use League\Flysystem\InMemory\InMemoryFilesystemAdapter;
 use PHPUnit\Framework\TestCase;
 use Ruvents\SpiralUpload\Tests\Fixtures\TestUpload;
-use Ruvents\SpiralUpload\Upload\UploadManager;
+use Ruvents\SpiralUpload\UploadManager;
 use Spiral\Storage\Bucket;
 
 /**

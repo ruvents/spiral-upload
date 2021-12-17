@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Ruvents\SpiralUpload\Bootloader;
+namespace Ruvents\SpiralUpload;
 
-use Ruvents\SpiralUpload\Config\UploadConfig;
-use Ruvents\SpiralUpload\Upload\UploadManager;
+use Ruvents\SpiralUpload\UploadConfig;
+use Ruvents\SpiralUpload\UploadManager;
 use Spiral\Boot\Bootloader\Bootloader;
 use Spiral\Storage\BucketInterface;
 

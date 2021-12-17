@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ruvents\SpiralUpload\Upload;
+namespace Ruvents\SpiralUpload;
 
 interface UploadInterface
 {
