@@ -1,6 +1,6 @@
 {
     "name": "ruvents/spiral-upload",
-    "description": "Upload manager",
+    "description": "Upload management",
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
