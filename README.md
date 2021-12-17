@@ -13,7 +13,8 @@ Then add `UploadBootloader` to your `App.php`:
 ```php
 use Ruvents\SpiralUpload\UploadBootloader;
 
-class App extends Kernel {
+class App extends Kernel
+{
     protected const LOAD = [
         ...
         UploadBootloader::class,
@@ -46,12 +47,13 @@ return [
 Use `UploadManager` for upload-relative tasks:
 
 ```php
-public function manageUploads(UploadManager $manager) {
+public function manageUploads(UploadManager $manager)
+{
     // Create upload from file path.
     $upload = $manager->create('/path/to/file.txt', 'file.txt');
 
     // Create upload from resource.
-    $upload = $manager->create($handle = fopen('/path/to/file.txt'), 'file.txt');
+    $upload = $manager->create($handle = fopen('/path/to/file.txt', 'r'), 'file.txt');
     fclose($handle);
 
     // Or from UploadedFileInterface.
